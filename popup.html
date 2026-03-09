@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScreenSnap</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">
+        <span class="logo-icon">📸</span>
+        <h1>ScreenSnap</h1>
+      </div>
+      <p class="tagline">One-click screenshots</p>
+    </div>
+
+    <!-- Capture Buttons -->
+    <div class="actions">
+      <button id="btn-visible" class="btn btn-visible" title="Capture only the visible area on screen">
+        <span class="btn-icon">📷</span>
+        <div class="btn-text">
+          <span class="btn-label">Visible Area</span>
+          <span class="btn-desc">Current screen only</span>
+        </div>
+      </button>
+      <button id="btn-fullpage" class="btn btn-fullpage" title="Capture the entire scrollable page">
+        <span class="btn-icon">📸</span>
+        <div class="btn-text">
+          <span class="btn-label">Full Page</span>
+          <span class="btn-desc">Entire scrollable page</span>
+        </div>
+      </button>
+    </div>
+
+    <!-- Status -->
+    <div id="status" class="status hidden">
+      <div class="status-content">
+        <span id="status-icon" class="status-icon"></span>
+        <span id="status-text" class="status-text"></span>
+      </div>
+      <div id="progress-bar" class="progress-bar hidden">
+        <div id="progress-fill" class="progress-fill"></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <span>ScreenSnap v1.0</span>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
